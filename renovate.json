@@ -1,0 +1,18 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Default preset for use with Renovate's repos",
+  "extends": [
+    "config:base",
+    ":rebaseStalePrs",
+    ":enablePreCommit",
+    ":semanticCommits",
+    ":semanticCommitTypeAll(ci)",
+    ":semanticCommitScope(deps)",
+    ":labels(bot, renovate, deps)",
+    ":dependencyDashboard",
+    ":prNotPending",
+    ":disableRateLimiting",
+    "docker:pinDigests"
+  ],
+  "assignees": ["refnode"]
+}

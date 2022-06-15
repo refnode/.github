@@ -1,0 +1,5 @@
+== Common configurations for refnode's GitHub repositories Core-Team
+
+* refnode <refnode@gmail.com>
+
+== Special thanks for contributions
