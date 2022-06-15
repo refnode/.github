@@ -43,5 +43,10 @@
     "terraform-version",
     "terragrunt",
     "terragrunt-version"
-  ]
+  ],
+  "kubernetes": {
+    "fileMatch": [
+      "\\.yaml$"
+    ]
+  }
 }
