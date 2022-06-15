@@ -15,5 +15,33 @@
     ":disableRateLimiting",
     "docker:pinDigests"
   ],
-  "assignees": ["refnode"]
+  "assignees": ["refnode"],
+  "enabledManagers": [
+    "ansible",
+    "docker-compose",
+    "dockerfile",
+    "gitlabci",
+    "kubernetes",
+    "gomod",
+    "pip_requirements",
+    "pip_setup",
+    "pipenv",
+    "pyenv",
+    "setup-cfg",
+    "bazel",
+    "flux",
+    "github-actions",
+    "gitlabci-include",
+    "helm-values",
+    "helmv3",
+    "homebrew",
+    "html",
+    "kustomize",
+    "pre-commit",
+    "regex",
+    "terraform",
+    "terraform-version",
+    "terragrunt",
+    "terragrunt-version"
+  ]
 }
