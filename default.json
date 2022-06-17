@@ -10,7 +10,6 @@
     ":semanticCommitScope(deps)",
     ":labels(bot, renovate, deps)",
     ":dependencyDashboard",
-    ":dependencyDashboardApproval",
     ":prNotPending",
     ":disableRateLimiting",
     "docker:pinDigests"
