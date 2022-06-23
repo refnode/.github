@@ -46,6 +46,9 @@
   "kubernetes": {
     "fileMatch": [
       "\\.yaml$"
+    ],
+    "ignorePaths": [
+      "flux-system/gotk-components.yaml"
     ]
   },
   "packageRules": [
