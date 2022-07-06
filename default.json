@@ -51,6 +51,11 @@
       "flux-system/gotk-components.yaml"
     ]
   },
+  "flux": {
+    "fileMatch": [
+      "\\.yaml$"
+    ]
+  },
   "packageRules": [
     {
       "description": "Require dashboard approval for major updates except Renovate",
