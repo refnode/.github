@@ -14,7 +14,9 @@
     ":disableRateLimiting",
     "docker:pinDigests"
   ],
-  "assignees": ["refnode"],
+  "assignees": [
+    "refnode"
+  ],
   "enabledManagers": [
     "ansible",
     "docker-compose",
@@ -41,7 +43,8 @@
     "terraform",
     "terraform-version",
     "terragrunt",
-    "terragrunt-version"
+    "terragrunt-version",
+    "nix"
   ],
   "kubernetes": {
     "fileMatch": [
@@ -59,16 +62,25 @@
   "packageRules": [
     {
       "description": "Require dashboard approval for major updates except Renovate",
-      "matchDatasources": ["docker"],
+      "matchDatasources": [
+        "docker"
+      ],
       "excludePackageNames": [
         "renovate/renovate"
       ],
-      "matchUpdateTypes": ["major"],
+      "matchUpdateTypes": [
+        "major"
+      ],
       "dependencyDashboardApproval": true
     },
     {
       "description": "Automerge non-major updates",
-      "matchUpdateTypes": ["minor", "patch", "digest", "lockFileMaintenance"],
+      "matchUpdateTypes": [
+        "minor",
+        "patch",
+        "digest",
+        "lockFileMaintenance"
+      ],
       "automerge": true
     }
   ]
